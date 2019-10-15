@@ -1,0 +1,8 @@
+public class EqualSum {
+    public static boolean hasEqualSum(int va, int vb, int vc){
+        if ((va + vb) == vc){
+            return true;
+        }
+        return false;
+    }
+}
