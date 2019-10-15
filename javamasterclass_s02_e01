@@ -1,0 +1,29 @@
+public class SpeedConverter {
+
+    //write a method called toMilesPerHour that has 1 parameter of type double with the name kilometerPerHour
+    //this method needs to return the rounded value of the calculation of type long
+    //if the parameter kilometersPerHour is less than 0, the method toMilesPerHour needs to
+    //return -1 to indicate the invalid value
+    //otherwise, if it is positive, calculate the value of miles per hour, round it and return it.
+    public static long toMilesPerHour(double kilometersPerHour) {
+        if (kilometersPerHour < 0) {
+            return -1;
+        }
+
+        return Math.round(kilometersPerHour / 1.609);
+    }
+
+    //write another method called printConversion with 1 parameter of type double with the name kilometersPerHour
+    //this method should not return anything and it needs to calculate milesPerHour from the kilometersPerHour parameter
+    //then print out the result
+    //if parameter kilomtersPerHour is less than 0, print the text "invalid value"
+    public static void printConversion(double kilometersPerHour) {
+        if (kilometersPerHour < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            long milesPerHour = toMilesPerHour(kilometersPerHour);
+            System.out.println(kilometersPerHour + " km/h = " + milesPerHour + " mi/h");
+        }
+
+    }
+}
