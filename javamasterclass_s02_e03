@@ -1,0 +1,9 @@
+public class DecimalComparator {
+
+    public static boolean areEqualByThreeDecimalPlaces(double fdValue,double sdValue){
+        if (((int)(fdValue*1000)) == (int)(sdValue*1000)) {
+            return true;
+        }
+        return false;
+    }
+}
