@@ -1,0 +1,15 @@
+public class Print {
+    public static void printEqual (int va, int vb, int vc){
+        if (va < 0 || vb < 0 || vc < 0){
+            System.out.println("Invalid Value");
+        } else{
+            if(va == vb && vb == vc){
+                System.out.println("All numbers are equal");
+            }else if (va != vb && vc != vb && vc != va){
+                System.out.println("All numbers are different");
+            }else{
+                System.out.println("Neither all are equal or different");
+            }
+        }
+    }
+}
