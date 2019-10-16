@@ -1,0 +1,17 @@
+public class MtoYandD {
+    public static void printYearsAndDays(long minutes) {
+        if (minutes < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            long years = minutes / 525_600L;
+            if (years >0) {
+                long days = (minutes % 525_600) / 1440;
+                System.out.println(minutes+" min = "+years+" y and "+days+" d");
+            }else{
+                long days = minutes /1440;
+                System.out.println(minutes+" min = "+years+" y and "+days+" d");
+            }
+
+        }
+    }
+}
